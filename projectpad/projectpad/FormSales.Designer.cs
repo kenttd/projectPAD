@@ -47,8 +47,10 @@
             this.label7 = new System.Windows.Forms.Label();
             this.numericUpDownDiscount = new System.Windows.Forms.NumericUpDown();
             this.label8 = new System.Windows.Forms.Label();
-            this.Description = new System.Windows.Forms.ListBox();
             this.buttonBack = new System.Windows.Forms.Button();
+            this.comboBoxCategory = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.richTextBoxDesc = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMax)).BeginInit();
@@ -94,6 +96,7 @@
             this.buttonInsert.TabIndex = 9;
             this.buttonInsert.Text = "Insert";
             this.buttonInsert.UseVisualStyleBackColor = true;
+            this.buttonInsert.Click += new System.EventHandler(this.buttonInsert_Click);
             // 
             // dataGridView1
             // 
@@ -132,6 +135,7 @@
             this.comboBoxType.Name = "comboBoxType";
             this.comboBoxType.Size = new System.Drawing.Size(200, 24);
             this.comboBoxType.TabIndex = 14;
+            this.comboBoxType.SelectedIndexChanged += new System.EventHandler(this.comboBoxType_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -155,6 +159,7 @@
             // 
             // dateTimePickerStart
             // 
+            this.dateTimePickerStart.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePickerStart.Location = new System.Drawing.Point(134, 396);
             this.dateTimePickerStart.Name = "dateTimePickerStart";
             this.dateTimePickerStart.Size = new System.Drawing.Size(200, 22);
@@ -162,6 +167,7 @@
             // 
             // dateTimePickerEnd
             // 
+            this.dateTimePickerEnd.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePickerEnd.Location = new System.Drawing.Point(134, 437);
             this.dateTimePickerEnd.Name = "dateTimePickerEnd";
             this.dateTimePickerEnd.Size = new System.Drawing.Size(200, 22);
@@ -228,15 +234,6 @@
             this.label8.TabIndex = 25;
             this.label8.Text = "%";
             // 
-            // Description
-            // 
-            this.Description.FormattingEnabled = true;
-            this.Description.ItemHeight = 16;
-            this.Description.Location = new System.Drawing.Point(361, 396);
-            this.Description.Name = "Description";
-            this.Description.Size = new System.Drawing.Size(426, 100);
-            this.Description.TabIndex = 27;
-            // 
             // buttonBack
             // 
             this.buttonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -248,13 +245,41 @@
             this.buttonBack.UseVisualStyleBackColor = true;
             this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
+            // comboBoxCategory
+            // 
+            this.comboBoxCategory.FormattingEnabled = true;
+            this.comboBoxCategory.Location = new System.Drawing.Point(566, 397);
+            this.comboBoxCategory.Name = "comboBoxCategory";
+            this.comboBoxCategory.Size = new System.Drawing.Size(134, 24);
+            this.comboBoxCategory.TabIndex = 30;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(357, 396);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(102, 20);
+            this.label9.TabIndex = 29;
+            this.label9.Text = "Category : ";
+            // 
+            // richTextBoxDesc
+            // 
+            this.richTextBoxDesc.Location = new System.Drawing.Point(361, 427);
+            this.richTextBoxDesc.Name = "richTextBoxDesc";
+            this.richTextBoxDesc.Size = new System.Drawing.Size(426, 76);
+            this.richTextBoxDesc.TabIndex = 31;
+            this.richTextBoxDesc.Text = "Description";
+            // 
             // FormSales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 548);
+            this.Controls.Add(this.richTextBoxDesc);
+            this.Controls.Add(this.comboBoxCategory);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.buttonBack);
-            this.Controls.Add(this.Description);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.numericUpDownDiscount);
             this.Controls.Add(this.label7);
@@ -307,7 +332,9 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.NumericUpDown numericUpDownDiscount;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ListBox Description;
         private System.Windows.Forms.Button buttonBack;
+        private System.Windows.Forms.ComboBox comboBoxCategory;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.RichTextBox richTextBoxDesc;
     }
 }

@@ -1,0 +1,17 @@
+D:\ProjectPAD\projectPAD\projectpad\projectpad\bin\Debug\projectpad.exe.config
+D:\ProjectPAD\projectPAD\projectpad\projectpad\bin\Debug\projectpad.exe
+D:\ProjectPAD\projectPAD\projectpad\projectpad\bin\Debug\projectpad.pdb
+D:\ProjectPAD\projectPAD\projectpad\projectpad\obj\Debug\projectpad.csproj.AssemblyReference.cache
+D:\ProjectPAD\projectPAD\projectpad\projectpad\obj\Debug\projectpad.Properties.Resources.resources
+D:\ProjectPAD\projectPAD\projectpad\projectpad\obj\Debug\projectpad.csproj.GenerateResource.cache
+D:\ProjectPAD\projectPAD\projectpad\projectpad\obj\Debug\projectpad.csproj.CoreCompileInputs.cache
+D:\ProjectPAD\projectPAD\projectpad\projectpad\obj\Debug\projectpad.exe
+D:\ProjectPAD\projectPAD\projectpad\projectpad\obj\Debug\projectpad.pdb
+D:\ProjectPAD\projectPAD\projectpad\projectpad\obj\Debug\projectpad.Form1.resources
+D:\ProjectPAD\projectPAD\projectpad\projectpad\obj\Debug\projectpad.FormProduct.resources
+D:\ProjectPAD\projectPAD\projectpad\projectpad\obj\Debug\projectpad.FormSales.resources
+D:\ProjectPAD\projectPAD\projectpad\projectpad\bin\Debug\EntityFramework.dll
+D:\ProjectPAD\projectPAD\projectpad\projectpad\bin\Debug\EntityFramework.SqlServer.dll
+D:\ProjectPAD\projectPAD\projectpad\projectpad\bin\Debug\EntityFramework.xml
+D:\ProjectPAD\projectPAD\projectpad\projectpad\bin\Debug\EntityFramework.SqlServer.xml
+D:\ProjectPAD\projectPAD\projectpad\projectpad\obj\Debug\projectpad.csproj.CopyComplete

@@ -16,5 +16,17 @@ namespace projectpad
         {
             InitializeComponent();
         }
+
+        private void buttonProduct_Click(object sender, EventArgs e)
+        {
+            FormProduct product = new FormProduct();
+            product.ShowDialog();
+        }
+
+        private void buttonSalesOffer_Click(object sender, EventArgs e)
+        {
+            FormSales f = new FormSales();
+            f.ShowDialog();
+        }
     }
 }

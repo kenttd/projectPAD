@@ -12,6 +12,7 @@ namespace projectpad
 {
     public partial class FormProduct : Form
     {
+        int id = -1;
         AdventureWorks2019Entities db = new AdventureWorks2019Entities();
         public FormProduct()
         {
@@ -22,6 +23,8 @@ namespace projectpad
             comboBoxGoodsFlag.Items.Add("Finished goods ready for sale");
             numericUpDownSafety.Maximum = 1000;
             numericUpDownReorder.Maximum = 1000;
+            buttonUpdate.Enabled = true;
+            buttonDelete.Enabled = true;
         }
 
         private void FormProduct_Load(object sender, EventArgs e)
@@ -80,6 +83,54 @@ namespace projectpad
                 db.SaveChanges();
                 refreshData();
             }
+        }
+
+        private void buttonClear_Click(object sender, EventArgs e)
+        {
+            textBoxName.Text = "";
+            comboBoxGoodsFlag.SelectedIndex = -1;
+            comboBoxMakeFlag.SelectedIndex = -1;    
+            numericUpDownSafety.Value = 0;
+            numericUpDownReorder.Value = 0;
+            numericUpDownStandard.Value = 0;
+            numericUpDownDays.Value = 0;
+            numericUpDownPrice.Value = 0;
+
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            id = (int)dataGridView1.Rows[e.RowIndex].Cells[0].Value;
+            buttonDelete.Enabled = true;
+            buttonUpdate.Enabled = true;
+        }
+
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+            buttonUpdate.Enabled = false;
+            buttonDelete.Enabled = false;
+            var deleted = db.Products.FirstOrDefault(h => h.ProductID == id);
+            db.Products.Remove(deleted);
+            db.SaveChanges();
+            refreshData();
+            id = -1;
+        }
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+            buttonUpdate.Enabled = false;
+            buttonDelete.Enabled = false;
+            var updated = db.Products.FirstOrDefault(h => h.ProductID == id);
+            updated.Name = textBoxName.Text;
+            updated.MakeFlag = (comboBoxMakeFlag.SelectedIndex == 1);
+            updated.FinishedGoodsFlag = (comboBoxGoodsFlag.SelectedIndex == 1);
+            updated.SafetyStockLevel = (short)numericUpDownSafety.Value;
+            updated.ReorderPoint = (short)numericUpDownReorder.Value;
+            updated.StandardCost = (int)numericUpDownStandard.Value;
+            updated.ListPrice = (int)numericUpDownPrice.Value;
+            updated.SellStartDate=dateTimePickerSell.Value;
+            db.SaveChanges();
+            refreshData();
         }
     }
 }

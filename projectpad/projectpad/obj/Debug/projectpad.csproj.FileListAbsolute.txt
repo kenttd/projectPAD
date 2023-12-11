@@ -15,3 +15,6 @@ D:\ProjectPAD\projectPAD\projectpad\projectpad\bin\Debug\EntityFramework.SqlServ
 D:\ProjectPAD\projectPAD\projectpad\projectpad\bin\Debug\EntityFramework.xml
 D:\ProjectPAD\projectPAD\projectpad\projectpad\bin\Debug\EntityFramework.SqlServer.xml
 D:\ProjectPAD\projectPAD\projectpad\projectpad\obj\Debug\projectpad.csproj.CopyComplete
+D:\ProjectPAD\projectPAD\projectpad\projectpad\obj\Debug\projectpad.FormCustomer.resources
+D:\ProjectPAD\projectPAD\projectpad\projectpad\obj\Debug\projectpad.FormSalesPerson.resources
+D:\ProjectPAD\projectPAD\projectpad\projectpad\obj\Debug\projectpad.FormTerritory.resources

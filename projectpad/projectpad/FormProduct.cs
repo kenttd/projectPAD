@@ -131,6 +131,7 @@ namespace projectpad
             updated.SellStartDate=dateTimePickerSell.Value;
             db.SaveChanges();
             refreshData();
+            id= -1;
         }
     }
 }

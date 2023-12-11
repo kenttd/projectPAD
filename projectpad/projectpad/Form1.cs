@@ -28,5 +28,23 @@ namespace projectpad
             FormSales f = new FormSales();
             f.ShowDialog();
         }
+
+        private void buttonCustomer_Click(object sender, EventArgs e)
+        {
+            FormCustomer f = new FormCustomer();
+            f.ShowDialog();
+        }
+
+        private void buttonSalesPerson_Click(object sender, EventArgs e)
+        {
+            FormSalesPerson f = new FormSalesPerson();
+            f.ShowDialog();
+        }
+
+        private void buttonTerritory_Click(object sender, EventArgs e)
+        {
+            FormTerritory f = new FormTerritory();
+            f.ShowDialog();
+        }
     }
 }

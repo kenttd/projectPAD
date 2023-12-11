@@ -127,6 +127,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCustomer.Designer.cs">
+      <DependentUpon>FormCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormProduct.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +144,18 @@
     </Compile>
     <Compile Include="FormSales.Designer.cs">
       <DependentUpon>FormSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSalesPerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSalesPerson.Designer.cs">
+      <DependentUpon>FormSalesPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTerritory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTerritory.Designer.cs">
+      <DependentUpon>FormTerritory.cs</DependentUpon>
     </Compile>
     <Compile Include="Illustration.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -303,11 +321,20 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormCustomer.resx">
+      <DependentUpon>FormCustomer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormProduct.resx">
       <DependentUpon>FormProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSales.resx">
       <DependentUpon>FormSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSalesPerson.resx">
+      <DependentUpon>FormSalesPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTerritory.resx">
+      <DependentUpon>FormTerritory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

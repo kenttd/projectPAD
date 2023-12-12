@@ -38,6 +38,15 @@ namespace projectpad
             comboBoxTerritory.Items.Add("North America");
             comboBoxTerritory.Items.Add("Europe");
             comboBoxTerritory.Items.Add("Pacific");
+
+
+        }
+
+        private void buttonReport_Click(object sender, EventArgs e)
+        {
+            CrystalReportTerr c = new CrystalReportTerr();
+            crystalReportViewer1.ReportSource = c;
+            c.SetParameterValue("Group", comboBoxTerritory.SelectedItem);
         }
     }
 }

@@ -33,6 +33,7 @@
             this.comboBoxTerritory = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.buttonReport = new System.Windows.Forms.Button();
+            this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.SuspendLayout();
             // 
             // buttonBack
@@ -83,12 +84,24 @@
             this.buttonReport.TabIndex = 36;
             this.buttonReport.Text = "Create Report";
             this.buttonReport.UseVisualStyleBackColor = true;
+            this.buttonReport.Click += new System.EventHandler(this.buttonReport_Click);
+            // 
+            // crystalReportViewer1
+            // 
+            this.crystalReportViewer1.ActiveViewIndex = -1;
+            this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.crystalReportViewer1.Location = new System.Drawing.Point(18, 82);
+            this.crystalReportViewer1.Name = "crystalReportViewer1";
+            this.crystalReportViewer1.Size = new System.Drawing.Size(908, 488);
+            this.crystalReportViewer1.TabIndex = 37;
             // 
             // FormCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(928, 482);
+            this.ClientSize = new System.Drawing.Size(938, 582);
+            this.Controls.Add(this.crystalReportViewer1);
             this.Controls.Add(this.buttonReport);
             this.Controls.Add(this.comboBoxTerritory);
             this.Controls.Add(this.label3);
@@ -109,5 +122,6 @@
         private System.Windows.Forms.ComboBox comboBoxTerritory;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button buttonReport;
+        private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
     }
 }

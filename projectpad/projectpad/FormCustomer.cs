@@ -36,5 +36,12 @@ namespace projectpad
                 comboBoxTerritory.Items.Add(terr.ToList().ElementAt(i).territory);
             }
         }
+
+        private void buttonReport_Click(object sender, EventArgs e)
+        {
+            CrystalReportCust c = new CrystalReportCust();
+            crystalReportViewer1.ReportSource = c;
+            c.SetParameterValue("Name",comboBoxTerritory.SelectedItem);
+        }
     }
 }
